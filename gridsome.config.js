@@ -31,12 +31,12 @@ module.exports = {
         }
       }
     },
-    //{
-    //  use: '@gridsome/plugin-google-analytics',
-    //  options: {
-    //    id: process.env.GA__ID
-    //  },
-    //},
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-150206793-3'
+      },
+    },
     {
       use: '@gridsome/plugin-sitemap',
       options: {

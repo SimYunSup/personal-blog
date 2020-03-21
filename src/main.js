@@ -13,7 +13,7 @@ export default function (Vue, { router, head, isClient }) {
     crossorigin: 'anonymous'
   })
 
-  head.link.push({
+  head.meta.push({
     name: 'google-site-verification',
     content: 'fs2XnBhfUj4mE6Mc9tsvmLQ4MOGw5v2SkMdlfhYLPjE'
   })
