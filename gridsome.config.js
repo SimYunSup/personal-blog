@@ -69,7 +69,7 @@ module.exports = {
         feedItemOptions: node => ({
           title: node.title,
           description: node.description,
-          url: 'https://pickhealer.netlify.com/' + node.path,
+          url: 'https://pickhealer.netlify.com' + node.path,
           author: 'Yunsup Sim',
           date: node.date
         }),
