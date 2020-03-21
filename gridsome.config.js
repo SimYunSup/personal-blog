@@ -65,7 +65,7 @@ module.exports = {
           date: node.date
         }),
         output: {
-          dir: './assets',
+          dir: './static',
           name: 'rss.xml'
         },
         maxItems: 20,
