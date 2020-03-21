@@ -2,8 +2,9 @@
 title: W3C HTML5 Conference 2019 후기
 date: 2019-10-27T00:00:00
 description: W3C HTML5 Conference 2019에 갔다와서 느낀 점과 들은 세션을 정리해보았다.
+canonical_url: false
+slug: 'html5-Conference-2019'
 published: true
-slug: HTML5-Conference-2019
 series: false
 tags: ["Conference", "Web"]
 ---

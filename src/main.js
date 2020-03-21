@@ -1,6 +1,6 @@
 // Import main css
 import '~/assets/style/index.scss'
-require("gridsome-plugin-remark-prismjs-all/themes/night-owl.css");
+import "gridsome-plugin-remark-prismjs-all/themes/night-owl.css";
 
 // Import default layout so we don't need to import it to every page
 import DefaultLayout from '~/layouts/Default.vue'

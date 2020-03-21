@@ -51,7 +51,7 @@ module.exports = {
     {
       use: 'gridsome-plugin-rss',
       options: {
-        contentTypeName: 'BlogPost',
+        contentTypeName: 'Post',
         feedOptions: {
           title: 'Yunsup Sim\'s log',
           feed_url: 'https://pickhealer.netlify.com/rss.xml',
@@ -65,10 +65,11 @@ module.exports = {
           date: node.date
         }),
         output: {
-          dir: './static',
+          dir: './assets',
           name: 'rss.xml'
         },
-        maxItems: 20
+        maxItems: 20,
+        latest: true
       }
     }
   ],
