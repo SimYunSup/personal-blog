@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fcba4c50-9bbb-48bd-a787-22194e813092" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1ZPBIgjTlPxxmyZCAtiOwxYnxFd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\StaminaPortion\WebStormProjects\personal-blog\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\StaminaPortion\WebStormProjects\personal-blog\static" />
+      <recent name="C:\Users\StaminaPortion\WebStormProjects\personal-blog\src\assets\images" />
+      <recent name="C:\Users\StaminaPortion\WebStormProjects\personal-blog\content\posts" />
+      <recent name="C:\Users\StaminaPortion\WebStormProjects\personal-blog\content\posts\images" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fcba4c50-9bbb-48bd-a787-22194e813092" name="Default Changelist" comment="" />
+      <created>1584730770903</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584730770903</updated>
+      <workItem from="1584730778205" duration="24004000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="996" y="300" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584737164892">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="996" y="300" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584737164892" />
+    <state x="1003" y="286" key="FileChooserDialogImpl" timestamp="1584755215346">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1003" y="286" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584731304915" />
+    <state x="1003" y="286" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584755215346" />
+    <state x="724" y="206" key="SettingsEditor" timestamp="1584755305296">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="724" y="206" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584731307325" />
+    <state x="724" y="206" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584755305296" />
+    <state x="906" y="279" width="633" height="570" key="find.popup" timestamp="1584755143893">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="906" y="279" width="633" height="570" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584731565578" />
+    <state x="906" y="279" width="633" height="570" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584755143893" />
+    <state x="973" y="270" width="672" height="678" key="search.everywhere.popup" timestamp="1584732994519">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="973" y="270" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584732994519" />
+  </component>
+</project>
