@@ -40,11 +40,20 @@ module.exports = {
     {
       use: '@gridsome/plugin-sitemap',
       options: {
+        cacheTime: 600000,
         config: {
           '/blog/*': {
             changefreq: 'daily',
             priority: 1
           },
+          '/blog/tag/*': {
+            changefreq: 'monthly',
+            priority: 0.7
+          },
+          '/': {
+            changefreq: 'monthly',
+            priority: 0.5
+          }
         }
       }
     },
