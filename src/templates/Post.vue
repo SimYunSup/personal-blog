@@ -71,7 +71,7 @@ export default {
         },
         {
           name: 'og:image',
-          content: this.$page.post.image.src || ''
+          content: this.$page.post.image ? this.$page.post.image.src : ''
         },
         {
           name: 'twitter:card',
