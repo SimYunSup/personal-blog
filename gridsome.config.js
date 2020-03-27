@@ -66,7 +66,7 @@ module.exports = {
           feed_url: 'https://pickhealer.netlify.com/rss.xml',
           site_url: 'https://pickhealer.netlify.com'
         },
-        feedItemOptions: node => ({
+        feedItemOptions: node => node.published && ({
           title: node.title,
           description: node.description,
           url: 'https://pickhealer.netlify.com' + node.path,
