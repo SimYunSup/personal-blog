@@ -3,7 +3,7 @@ title: 초보 개발자의 서비스 마이그레이션 후기
 date: 2020-03-25T00:00:00
 description: 초보 개발자가 프레임워크를 Vue에서 React로 마이그레이션을 마친 후기 
 canonical_url: false
-slug: 'koin-vue-to-react-migrationt'
+slug: 'koin-vue-to-react-migration'
 published: false
 series: false
 tags: ["Devlog", ""]
