@@ -58,27 +58,47 @@ module.exports = {
       }
     },
     {
-      use: 'gridsome-plugin-rss',
+      use: 'gridsome-plugin-feed',
       options: {
-        contentTypeName: 'Post',
+        // Required: array of `GraphQL` type names you wish to include
+        contentTypes: ['Post'],
+        // Optional: any properties you wish to set for `Feed()` constructor
+        // See https://www.npmjs.com/package/feed#example for available properties
         feedOptions: {
-          title: 'Yunsup Sim\'s log',
-          feed_url: 'https://pickhealer.netlify.com/rss.xml',
-          site_url: 'https://pickhealer.netlify.com'
+          title: 'Yunsup\'s log',
+          description: '기록을 위한 블로그',
+          language: 'ko',
+          author: {
+            name: 'Yunsup Sim',
+            email: 'pedogunu@gmail.com'
+          }
         },
-        feedItemOptions: node => node.published && ({
+        rss: {
+          enabled: true,
+          output: '/rss.xml'
+        },
+        atom: {
+          enabled: false
+        },
+        json: {
+          enabled: false
+        },
+        maxItems: 10,
+        // Optional: an array of properties passed to `Feed.addItem()` that will be parsed for
+        // URLs in HTML (ensures that URLs are full `http` URLs rather than site-relative).
+        // To disable this functionality, set to `null`.
+        htmlFields: ['description', 'Author'],
+        filterNodes: (node) => node.published,
+        // Optional: a method that accepts a node and returns an object for `Feed.addItem()`
+        // See https://www.npmjs.com/package/feed#example for available properties
+        // NOTE: `date` field MUST be a Javascript `Date` object
+        nodeToFeedItem: (node) => ({
           title: node.title,
+          date: node.date || node.fields.date,
           description: node.description,
-          url: 'https://pickhealer.netlify.com' + node.path,
+          url: node.link,
           author: 'Yunsup Sim',
-          date: node.date
-        }),
-        output: {
-          dir: './static',
-          name: 'rss.xml'
-        },
-        maxItems: 20,
-        latest: true
+        })
       }
     }
   ],

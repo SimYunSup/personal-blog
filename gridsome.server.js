@@ -6,6 +6,11 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = function (api) {
+  api.onCreateNode(node => {
+    if (node.internal.typeName === 'Post' && node.published === false) {
+      return null
+    }
+  })
   api.loadSource(({ addCollection }) => {
     // Use the Data store API here: https://gridsome.org/docs/data-store-api/
   })
