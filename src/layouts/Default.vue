@@ -14,8 +14,8 @@
           {{ nav.name }}
         </g-link>
       </nav>
-      
-      <div class="header__right">        
+
+      <div class="header__right">
         <ToggleTheme />
       </div>
     </header>
@@ -63,6 +63,7 @@ export default {
   min-height: var(--header-height);
   padding: 0 calc(var(--space) / 2);
   margin-bottom: var(--header-bottom);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   top:0;
   z-index: 10;
 
@@ -74,8 +75,8 @@ export default {
 
   nav {
     position: absolute;
-    width: 30%;
-    left: 35%;
+    width: 50%;
+    left: 25%;
     display: flex;
     justify-content: space-around;
   }
@@ -96,6 +97,10 @@ export default {
   }
 
   @media screen and (max-width: 650px) {
+    min-height: calc(var(--header-height) + var(--header-bottom));
+    padding-bottom: var(--header-bottom);
+    margin-bottom: 0;
+
     nav {
       top: 60px;
       left: 15%;

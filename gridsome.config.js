@@ -8,7 +8,6 @@ module.exports = {
   siteName: 'Yunsup Sim\'s log',
   siteDescription: '기록을 위한 블로그',
   siteUrl: 'https://pickhealer.netlify.com',
-  siteAuthor: 'Yunsup Sim',
 
   templates: {
     Post: '/blog/:slug',
@@ -31,12 +30,12 @@ module.exports = {
         }
       }
     },
-    {
+    /*{
       use: '@gridsome/plugin-google-analytics',
       options: {
         id: 'UA-150206793-3'
       },
-    },
+    },*/
     {
       use: '@gridsome/plugin-sitemap',
       options: {
@@ -112,7 +111,15 @@ module.exports = {
       plugins: [
         ['gridsome-plugin-remark-prismjs-all', {
           highlightClassName: 'code-highlight',
-
+          languageExtensions: [
+            {
+              language: 'vue',
+              extend: 'html',
+              definition: {
+                vue_types: /(vue)/,
+              },
+            }
+          ]
         }],
       ]
     }
