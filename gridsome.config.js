@@ -5,9 +5,9 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Yunsup Sim\'s log',
+  siteName: 'Ethan Sup\'s log',
   siteDescription: '기록을 위한 블로그',
-  siteUrl: 'https://pickhealer.netlify.com',
+  siteUrl: 'https://ethansup.net',
 
   templates: {
     Post: '/blog/:slug',
@@ -30,12 +30,12 @@ module.exports = {
         }
       }
     },
-    /*{
+    {
       use: '@gridsome/plugin-google-analytics',
       options: {
-        id: 'UA-150206793-3'
+        id: 'UA-150206793-4'
       },
-    },*/
+    },
     {
       use: '@gridsome/plugin-sitemap',
       options: {
@@ -64,7 +64,7 @@ module.exports = {
         // Optional: any properties you wish to set for `Feed()` constructor
         // See https://www.npmjs.com/package/feed#example for available properties
         feedOptions: {
-          title: 'Yunsup\'s log',
+          title: 'Ethan Sup\'s log',
           description: '기록을 위한 블로그',
           language: 'ko',
           author: {

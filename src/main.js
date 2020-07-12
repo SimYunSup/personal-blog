@@ -15,7 +15,12 @@ export default function (Vue, { router, head, isClient }) {
 
   head.meta.push({
     name: 'google-site-verification',
-    content: 'fs2XnBhfUj4mE6Mc9tsvmLQ4MOGw5v2SkMdlfhYLPjE'
+    content: 'ykyTYLh42SM_2IrBWFVopxp203cmvmcANgKIEtYWbfI'
+  })
+
+  head.meta.push({
+    name: 'naver-site-verification',
+    content: 'b35e2d647390e5aa22d4e04f0cb35b90a52450eb'
   })
   head.link.push({
     name: 'apple-touch-icon',
