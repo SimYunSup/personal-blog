@@ -7,3 +7,4 @@ dist
 .env
 .env.*
 static/rss.xml
+.idea/workspace.xml
