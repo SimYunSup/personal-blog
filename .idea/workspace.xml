@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcba4c50-9bbb-48bd-a787-22194e813092" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/content/posts/Vue-to-React.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/Vue-to-React.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +62,8 @@
       <workItem from="1585452623090" duration="725000" />
       <workItem from="1585457255689" duration="5611000" />
       <workItem from="1585475731768" duration="56000" />
-      <workItem from="1594549066433" duration="2022000" />
+      <workItem from="1594549066433" duration="2238000" />
+      <workItem from="1594552185763" duration="621000" />
     </task>
     <servers />
   </component>
