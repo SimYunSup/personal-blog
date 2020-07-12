@@ -1,6 +1,6 @@
 ---
 title: Vue에서 React로
-date: 2020-07-12T08:00:00
+date: 2020-07-13T00:00:00
 description: 초보 개발자가 프레임워크를 Vue에서 React로 마이그레이션을 마친 후기 
 canonical_url: false
 image: './images/koin-vue-to-react-migration-0.png'
