@@ -114,6 +114,8 @@ export default function Home() {
       <CustomInput
         message={msg}
         onChangeMessage={setMsg} />
+      {msg}
+    </div>
 }
 ```
 _간단하게  React로 작성한 input 컴포넌트와 보여주는 화면_
