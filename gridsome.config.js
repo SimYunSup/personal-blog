@@ -30,12 +30,12 @@ module.exports = {
         }
       }
     },
-    {
-      use: '@gridsome/plugin-google-analytics',
-      options: {
-        id: 'UA-150206793-4'
-      },
-    },
+    // {
+    //   use: '@gridsome/plugin-google-analytics',
+    //   options: {
+    //     id: 'UA-150206793-4'
+    //   },
+    // },
     {
       use: '@gridsome/plugin-sitemap',
       options: {
