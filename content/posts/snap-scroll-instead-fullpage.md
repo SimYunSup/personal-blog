@@ -1,5 +1,5 @@
 ---
-title: CSS Scroll snap으로 fullpage.js를 대체하기가 되고 싶었던 삽질기
+title: CSS Scroll snap으로 fullpage.js를 대체하고 싶었다
 date: 2020-07-22T00:50:00
 description: React 안에서 fullpage.js 대신 Scroll snap으로 대체하기(실패)
 canonical_url: false
