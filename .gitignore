@@ -8,4 +8,4 @@ dist
 .env.*
 static/rss.xml
 .idea/workspace.xml
-.idea/*
+.idea/
