@@ -94,7 +94,8 @@ module.exports = {
         nodeToFeedItem: (node) => ({
           title: node.title,
           date: node.date || node.fields.date,
-          description: node.description,
+          summary: node.description,
+          content: node.content,
           url: node.link,
           author: 'Yunsup Sim',
         })
