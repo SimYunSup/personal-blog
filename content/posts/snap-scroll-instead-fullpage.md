@@ -266,7 +266,7 @@ main.scroll-container > div {
 }
 ```
 
-![결과](./images/snap-scroll-instead-fullpage-9.gif)
+![결과](./images/snap-scroll-instead-fullpage-10.gif)
 _하긴 했는데..(왼쪽: Firefox 78, 오른쪽: Chrome 84)_
 
 그나마 만족한 결과가 나왔다. header가 스크롤을 가리지 않고, 애니메이션이 매끄럽게 흘러간다(Chrome은 덜 매끄럽지만). 물론 fullpage.js를 사용했다면 쉽게 매끄러운 애니메이션을 구현할 수 있었겠지만 CSS로 한번 구현해보고 싶었다. Chrome 84버전에서는 덜 매끄러운 애니메이션이 나오면서 fullpage.js의 대체를 하지 못했지만 이후 버전에서는 애니메이션을 개선하여 대체하는 때가 왔으면 좋겠다.
