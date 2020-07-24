@@ -66,7 +66,7 @@ snap-scroll-type: none | [ x | y | block | inline | both ] [ mandatory | proximi
 `snap-scroll-type`은 컨테이너에서 Scroll snap을 할 축과 엄격도를 정한다.  첫번째에 넣는 값으로는 x, y축 혹은 block축, inline축 등으로 정할 수 있다. 두번째로는 `mandatory`를 넣어 항상 snap point에 놓이도록 무조건 Scroll snap이 되도록 할 수 있고 `proximity`를 넣어 사용자의 스크롤을 우선시할 수 있다.
 
 ![mandatory와 proximity의 차이](./images/snap-scroll-instead-fullpage-6.gif)
-_mandatory와 proximity의 차이(좌: mandatory, 좌: proximity)_
+_mandatory와 proximity의 차이(좌: mandatory, 우: proximity)_
 
 ### snap-scroll-align
 
