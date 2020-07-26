@@ -141,6 +141,8 @@ main.scroll-container > div {
 }
 ```
 
+header공간을 넣기 위해서 `scroll-padding-top`값을 넣어 자식요소와 header가 겹치지 않게 해놓았다. 그리고 `scroll-snap-type: y mandatory;`를 Scroll container에 넣고 `scroll-snap-align: start;`를 자식요소에 넣어 최대한 fullpage.js와 비슷하게 만들었다.
+
 ![시도1의 결과](./images/snap-scroll-instead-fullpage-8.gif)
 _시도1의 결과(Firefox 78)_
 
@@ -148,7 +150,7 @@ Firefox에서 작동은 잘 되지만 header가 스크롤 위에 있어 만약 h
 
 # 시도2: html에 snap-scroll 넣기
 
-header가 스크롤 위에 가지 않도록 html 태그의 스크롤을 활용해서 Scroll Snap을 구현하는 것을 시도해보았다.
+header가 스크롤 위에 가지 않도록 html 태그의 스크롤을 활용해서 Scroll Snap을 구현하는 것을 시도해보았다(html 태그의 스크롤은 vw에 포함되지 않기 때문에 100%를 하면 width에 스크롤을 제외한 값이 들어간다).
 
 ```jsx{codeTitle: "App.js"}
 import React from 'react';
