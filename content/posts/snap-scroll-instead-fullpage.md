@@ -206,7 +206,7 @@ Firefox는 스크롤과 header가 분리되어있고, Scroll Snap도 정상적�
 ![Chrome의 통수2](./images/snap-scroll-instead-fullpage-9.gif)
 _또 Chrome의 통수...(왼쪽: Firefox 78, 오른쪽: Chrome 84)_
 
-Chrome에서 테스트했을 때 스크롤 할 때마다 여러개의 자식요소들이 한꺼번에 지나가는 현상을 볼 수 있었다.
+Chrome이 문제가 되었다. Chrome에서 테스트했을 때 스크롤 할 때마다 여러개의 자식요소들이 한꺼번에 지나가는 현상을 볼 수 있었다. 그래서 이 시도도 실패로 돌아갔다.
 
 # 시도 3: container에 snap-scroll 넣기 + 모든 스크롤 바 없애기
 
