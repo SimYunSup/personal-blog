@@ -12,7 +12,7 @@ tags: ["Devlog"]
 
 
 
-홈페이지 개발을 진행하는데 메인페이지를 어떻게 디자인할까 고민하다가 스크롤을 약간만 해도 스크롤이 부드럽게 움직여서 고정되는 기술(Scroll snap)을 site of the day의 어떤 페이지에서 본 기억을 가지고 그것을 구현해보려고 했다. 하지만 느낌으로 찾기는 어려웠고 검색에 검색을 거듭해서 결국 찾았다.
+홈페이지 개발을 진행하는데 메인페이지를 어떻게 디자인할까 고민하다가 스크롤을 약간만 해도 스크롤이 부드럽게 움직여서 고정되는 기술을 site of the day의 어떤 페이지에서 본 기억을 가지고 그것을 구현해보려고 했다. 하지만 느낌으로 찾기는 어려웠고 검색에 검색을 거듭해서 결국 찾았다.
 
 ![구현하고 싶었던 것](./images/snap-scroll-instead-fullpage-1.gif)
 _구현하고 싶었던 Scroll snap(fullpage.js)_ 
@@ -87,6 +87,8 @@ scroll-padding: [ <length-percentage> | auto ]{1,4};
 ```
 
 Scroll container의 viewport에서 snap하는 곳에서 \<length-percentage\>만큼 띄우도록 한다. `padding`은 모든 자식요소에 적용되지만 `margin`은 개별 자식요소에 적용된다. 
+
+이제 Scroll snap의 모든 속성을 알게 되었으니 header가 있는 메인페이지를 만들어보자.
 
 # 시도1 : container에 snap-scroll 넣기
 
@@ -268,10 +270,31 @@ main.scroll-container > div {
 }
 ```
 
+`scrollbar-width`를 `none`으로 두어 firefox의 스크롤 바를 없애고, `-ms-overflow-style`의 값도 `none`으로 두어 IE의 스크롤바도 없애준다(물론 의미는 없지만...). 마지막으로 `-webkit-scrollbar`의사요소의 값을 변경해 다른 모든 브라우저의 스크롤바를 없앤다.
+
 ![결과](./images/snap-scroll-instead-fullpage-10.gif)
 _하긴 했는데..(왼쪽: Firefox 78, 오른쪽: Chrome 84)_
 
-그나마 만족한 결과가 나왔다. header가 스크롤을 가리지 않고, 애니메이션이 매끄럽게 흘러간다(Chrome은 덜 매끄럽지만). 물론 fullpage.js를 사용했다면 쉽게 매끄러운 애니메이션을 구현할 수 있었겠지만 CSS로 한번 구현해보고 싶었다. Chrome 84버전에서는 덜 매끄러운 애니메이션이 나오면서 fullpage.js의 대체를 하지 못했지만 이후 버전에서는 애니메이션을 개선하여 대체하는 때가 왔으면 좋겠다.
+그 결과 그나마 만족한 결과가 나왔다. header가 스크롤을 가리지 않고, 애니메이션이 매끄럽게 흘러간다(Chrome은 덜 매끄럽지만).
+
+# 결론
+
+내가 생각했을 때 CSS scroll snap를 사용했을 때 장단점은 다음과 같다.
+
+### 장점
+
+1. JQuery를 사용하지 않고 페이지 스크롤을 사용할 수 있다.
+2. CSS는 무료다
+3. fullpage.js만큼 사용하기 쉽다!
+
+### 단점
+
+1. 아직도 부족한 브라우저별 애니메이션 지원(이 때문에 쓰지 않는 듯하다)
+2. IE이 지원을 하지 않는다..
+
+물론 fullpage.js를 사용했다면 쉽게 매끄러운 애니메이션을 구현할 수 있었겠지만 CSS로 한번 구현해보고 싶었다. Chrome 84버전에서는 덜 매끄러운 애니메이션이 나오면서 fullpage.js의 대체를 하지 못했지만 이후 버전에서는 애니메이션을 개선하여 대체하는 때가 왔으면 좋겠다.
 
 ![적어도 이 소리는 안 나왔으면 좋겠다](./images/snap-scroll-instead-fullpage-3.png)
 _적어도 이 소리는 안 나왔으면 좋겠다._
+
+이 글을 마치며 CSS Snap Scroll으로 만든 결과물이 어떻게 됐냐고 물으신다면 fullpage.js을 사서 적용하였다..
