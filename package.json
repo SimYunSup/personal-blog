@@ -16,7 +16,7 @@
     "gridsome-plugin-remark-prismjs-all": "^0.4.8"
   },
   "devDependencies": {
-    "node-sass": "^6.0.1",
+    "node-sass": "^7.0.0",
     "sass-loader": "^10.1.1"
   }
 }
